@@ -1,0 +1,55 @@
+.body {
+    font-family: Arial, serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    background-color: black;
+}
+.header {
+    height: 300px;
+    color: orange;
+    background-color: #1e1e1e;
+    text-align: -webkit-center;
+}
+
+.middle {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.footer {
+    color: darkred;
+    text-align: center;
+    margin: 10px;
+    height: 50px;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+    background-color: #1e1e1e;
+    color: white;
+}
+.content {
+    padding: 10px 0;
+    width: 75%;
+    float: left;
+}
+
+.left_menu{
+    width: 20%;
+    float: left;
+}
+
+.genres a:hover, a:active, a:focus  {
+    color: orange;
+   background-color: #1e1e1e;
+}
+
+.genres a, a:visited {
+    padding: 3px 3px 3px 15px;
+    display: block;
+    text-decoration: none;
+    color: chocolate;
+}

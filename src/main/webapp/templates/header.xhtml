@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Header</title>
+    <h:outputStylesheet library="css" name="main_style.css"/>
+</h:head>
+<h:body>
+
+    <ui:composition>
+        <div class="logo">
+            <h:graphicImage library="img" name="lib.png"/>
+        </div>
+
+        <div class="descr">
+            <h3>#{msg.welcome_title}</h3>
+        </div>
+
+        <div class="welcome">
+            <ol>#{msg.welcome_text}</ol>
+            <h3>#{msg.exit}</h3>
+        </div>
+
+        <div class="search">
+            <h:form styleClass="searchForm">
+                <h:inputText id="searchString" styleClass="searchString"/>
+                <h:commandButton value="#{msg.search}" styleClass="searchButton"/>
+                <h:selectOneMenu value="#{searchController.searchType}">
+                <f:selectItems value="#{searchController.searchList}"/>
+                </h:selectOneMenu>
+            </h:form>
+        </div>
+
+    </ui:composition>
+
+</h:body>
+</html>

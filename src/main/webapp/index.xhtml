@@ -21,7 +21,7 @@
 
         <div class="login_div">
             <p class="title"> #{msg.input_info}</p>
-            <h:form styleClass="login_form">
+            <h:form styleClass="login_form" style="color: white">
                 #{msg.input_name}<h:inputText id="username" value="#{user.username}" required="true"
                                               requiredMessage="#{msg.login_required}">
                 <f:validator validatorId="edu.alenkin.HomeLibUpd.validators.LoginValidator"/>
