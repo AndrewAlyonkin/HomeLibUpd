@@ -17,6 +17,16 @@
     </resource-ref>
 
     <servlet>
+        <servlet-name>ShowImage</servlet-name>
+        <servlet-class>edu.alenkin.HomeLibUpd.servlets.ShowImage</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowImage</servlet-name>
+        <url-pattern>/ShowImage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
         <load-on-startup>1</load-on-startup>

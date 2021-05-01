@@ -53,3 +53,52 @@
     text-decoration: none;
     color: chocolate;
 }
+
+.book_list h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.book_title {
+    height: 50px;
+    float:left;
+}
+
+.col1 {
+    vertical-align: top;
+    width:50px;
+}
+
+.col2{
+    vertical-align: top;
+    width: 240px;
+}
+
+.col2 a{
+    font-weight: bold;
+    color: orange;
+    font-size: 15px;
+}
+
+.col2 p {
+    font-size: 11px;
+}
+
+.col3 {
+    vertical-align: top;
+    width:350px;
+}
+
+.book_details p {
+    font-size: 11px;
+}
+
+.book_title a {
+    color: chocolate;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+
+}

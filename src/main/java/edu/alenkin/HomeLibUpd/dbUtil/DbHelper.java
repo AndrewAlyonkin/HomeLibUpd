@@ -32,5 +32,22 @@ import java.util.logging.Logger;
             return execute(s, beanReader, null);
         }
 
+        public byte[] getImageFromDb(int id) {
+            byte[] image = null;
+            try(Connection conn = Config.get().getConnectionFactory().getConnection()) {
+                PreparedStatement prepSt = conn.prepareStatement("SELECT b.image as \"image\"  FROM book b WHERE (b.id=?)");
+                    prepSt.setInt(1, id);
+                ResultSet rs = prepSt.executeQuery();
+
+                while (rs.next()) {
+                    image = rs.getBytes("image");
+                }
+            } catch (NamingException | SQLException ex) {
+                Logger.getLogger(DbHelper.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            return image;
+        }
+
+
 
     }
